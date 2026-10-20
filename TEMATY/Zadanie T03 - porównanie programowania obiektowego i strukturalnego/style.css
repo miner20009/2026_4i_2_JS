@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+    line-height: 1.7;
+}
+
+/* =========================
+   GŁÓWNY KONTENER
+========================= */
+
+body {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px 20px 60px;
+}
+
+/* =========================
+   NAGŁÓWKI
+========================= */
+
+h1 {
+    position: relative;
+    margin: 45px 0 0;
+    padding: 25px 30px;
+    font-size: 27px;
+    font-weight: 700;
+    color: white;
+
+    background: linear-gradient(
+            135deg,
+            #4f46e5,
+            #7c3aed
+    );
+
+    border-radius: 18px 18px 0 0;
+
+    box-shadow:
+            0 10px 25px rgba(79, 70, 229, 0.20);
+
+    overflow: hidden;
+}
+
+/* Dekoracyjny efekt */
+
+h1::after {
+    content: "";
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    right: -50px;
+    top: -70px;
+
+    background: rgba(255,255,255,0.12);
+    border-radius: 50%;
+}
+
+h1:first-of-type {
+    margin-top: 0;
+}
+
+/* =========================
+   LISTY / KARTY
+========================= */
+
+ul {
+    margin: 0;
+    padding: 30px 35px 30px 55px;
+
+    background: white;
+
+    border-radius: 0 0 18px 18px;
+
+    box-shadow:
+            0 8px 25px rgba(15, 23, 42, 0.08);
+
+    transition: 0.3s ease;
+}
+
+ul:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+            0 15px 35px rgba(15, 23, 42, 0.13);
+}
+
+/* =========================
+   ELEMENTY LISTY
+========================= */
+
+li {
+    margin-bottom: 15px;
+    padding-left: 10px;
+
+    font-size: 16px;
+}
+
+li:last-child {
+    margin-bottom: 0;
+}
+
+li::marker {
+    color: #6366f1;
+    font-size: 18px;
+}
+
+/* =========================
+   WYRÓŻNIENIA
+========================= */
+
+li strong {
+    color: #4f46e5;
+}
+
+/* =========================
+   SEPARATORY
+========================= */
+
+hr {
+    border: none;
+    height: 1px;
+
+    margin: 45px 0;
+
+    background: linear-gradient(
+            to right,
+            transparent,
+            #cbd5e1,
+            transparent
+    );
+}
+
+/* =========================
+   SPECJALNE SEKCJE
+========================= */
+
+/* Sekcja programowania strukturalnego */
+
+h1:nth-of-type(1) {
+    background: linear-gradient(
+            135deg,
+            #2563eb,
+            #06b6d4
+    );
+}
+
+/* Założenia strukturalnego */
+
+h1:nth-of-type(2) {
+    background: linear-gradient(
+            135deg,
+            #0891b2,
+            #0d9488
+    );
+}
+
+/* T03bProgramowanie obiektowe */
+
+h1:nth-of-type(3) {
+    background: linear-gradient(
+            135deg,
+            #7c3aed,
+            #db2777
+    );
+}
+
+/* Założenia obiektowego */
+
+h1:nth-of-type(4) {
+    background: linear-gradient(
+            135deg,
+            #9333ea,
+            #c026d3
+    );
+}
+
+/* Abstrakcja */
+
+h1:nth-of-type(5) {
+    background: linear-gradient(
+            135deg,
+            #f59e0b,
+            #f97316
+    );
+}
+
+/* Enkapsulacja */
+
+h1:nth-of-type(6) {
+    background: linear-gradient(
+            135deg,
+            #16a34a,
+            #059669
+    );
+}
+
+/* Dziedziczenie */
+
+h1:nth-of-type(7) {
+    background: linear-gradient(
+            135deg,
+            #0f766e,
+            #0891b2
+    );
+}
+
+/* Polimorfizm */
+
+h1:nth-of-type(8) {
+    background: linear-gradient(
+            135deg,
+            #dc2626,
+            #e11d48
+    );
+}
+
+/* Różnice */
+
+h1:nth-of-type(9) {
+    background: linear-gradient(
+            135deg,
+            #475569,
+            #1e293b
+    );
+}
+
+/* =========================
+   ANIMACJA
+========================= */
+
+h1,
+ul {
+    animation: appear 0.6s ease;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =========================
+   SCROLLBAR
+========================= */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #e2e8f0;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(
+            #6366f1,
+            #7c3aed
+    );
+
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #4f46e5;
+}
+
+/* =========================
+   TELEFONY
+========================= */
+
+@media (max-width: 700px) {
+
+    body {
+        padding: 15px 10px 40px;
+    }
+
+    h1 {
+        font-size: 21px;
+        padding: 20px;
+        border-radius: 14px 14px 0 0;
+    }
+
+    ul {
+        padding: 22px 20px 22px 40px;
+        border-radius: 0 0 14px 14px;
+    }
+
+    li {
+        font-size: 15px;
+    }
+
+    hr {
+        margin: 30px 0;
+    }
+}

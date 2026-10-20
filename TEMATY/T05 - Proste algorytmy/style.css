@@ -1,0 +1,485 @@
+/* ================================
+   USTAWIENIA GŁÓWNE
+================================ */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 40px 20px;
+
+    background: #eef2f7;
+    color: #263238;
+
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+}
+
+
+/* ================================
+   TYTUŁ
+================================ */
+
+body > h1 {
+    width: 850px;
+    max-width: 100%;
+
+    margin: 0 auto 25px;
+
+    padding: 25px 30px;
+
+    background: white;
+
+    border-left: 7px solid #1769aa;
+    border-radius: 12px;
+
+    box-shadow: 0 5px 20px rgba(30, 60, 90, 0.08);
+
+    font-size: 32px;
+    font-weight: 600;
+
+    letter-spacing: -0.5px;
+}
+
+.number {
+    color: #1769aa;
+    font-weight: 800;
+}
+
+
+/* ================================
+   WYRÓŻNIONY TEKST
+================================ */
+
+.highlight {
+    width: 850px;
+    max-width: 100%;
+
+    margin: 0 auto 22px;
+
+    padding: 20px 24px;
+
+    background: #fff8c5;
+
+    border-left: 5px solid #f0c419;
+    border-radius: 8px;
+
+    color: #443d20;
+
+    font-size: 16px;
+    line-height: 1.6;
+
+    box-shadow: 0 3px 12px rgba(80, 70, 20, 0.06);
+}
+
+
+/* ================================
+   AKAPITY
+================================ */
+
+body > p {
+    width: 850px;
+    max-width: 100%;
+
+    margin: 0 auto 18px;
+
+    color: #37474f;
+
+    font-size: 16px;
+    line-height: 1.65;
+}
+
+
+/* ================================
+   PODTYTUŁ
+================================ */
+
+body > h2 {
+    width: 850px;
+    max-width: 100%;
+
+    margin: 38px auto 18px;
+
+    padding-bottom: 10px;
+
+    border-bottom: 2px solid #dce4ec;
+
+    font-size: 25px;
+    font-weight: 600;
+
+    color: #263b50;
+}
+
+body > h2 .number {
+    color: #1769aa;
+}
+
+
+/* ================================
+   SCHEMAT BLOKOWY
+================================ */
+
+.blue-title {
+    width: 850px;
+    max-width: 100%;
+
+    margin: 25px auto 10px;
+
+    padding: 12px 18px;
+
+    background: linear-gradient(
+            135deg,
+            #12c9d6,
+            #159ec7
+    );
+
+    color: white;
+
+    border-radius: 8px;
+
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+
+    box-shadow: 0 4px 12px rgba(21, 158, 199, 0.2);
+}
+
+
+/* ================================
+   AKAPIT POD "SCHEMAT BLOKOWY"
+================================ */
+
+.blue-title + p {
+    margin-top: 0;
+}
+
+
+/* ================================
+   NUMER STRONY
+================================ */
+
+.page-number {
+    width: 850px;
+    max-width: 100%;
+
+    margin: 30px auto 0;
+
+    text-align: right;
+
+    color: #7a8791;
+
+    font-size: 14px;
+}
+
+
+/* ================================
+   DRUGA CZĘŚĆ — TABELA
+================================ */
+
+.page-table {
+    width: 850px;
+    max-width: 100%;
+
+    margin: 70px auto 0;
+
+    padding: 28px;
+
+    background: white;
+
+    border-radius: 14px;
+
+    box-shadow: 0 8px 30px rgba(30, 60, 90, 0.10);
+}
+
+
+/* ================================
+   TYTUŁ TABELI
+================================ */
+
+.table-caption {
+    margin-bottom: 15px;
+
+    color: #34495e;
+
+    font-size: 15px;
+}
+
+.table-caption strong {
+    color: #1769aa;
+}
+
+
+/* ================================
+   TABELA
+================================ */
+
+table {
+    width: 100%;
+
+    border-collapse: separate;
+    border-spacing: 0;
+
+    overflow: hidden;
+
+    border: 1px solid #d8e1e8;
+    border-radius: 10px;
+
+    background: white;
+
+    font-size: 14px;
+}
+
+
+/* ================================
+   NAGŁÓWEK TABELI
+================================ */
+
+thead th {
+    padding: 14px 16px;
+
+    background: #1d527c;
+
+    color: white;
+
+    border: none;
+
+    text-align: left;
+
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+
+    letter-spacing: 0.3px;
+}
+
+thead th:first-child {
+    border-top-left-radius: 9px;
+}
+
+thead th:last-child {
+    border-top-right-radius: 9px;
+}
+
+
+/* ================================
+   SZEROKOŚĆ KOLUMNY
+================================ */
+
+.symbol-column {
+    width: 190px;
+}
+
+
+/* ================================
+   KOMÓRKI
+================================ */
+
+tbody td {
+    padding: 15px;
+
+    border: none;
+    border-bottom: 1px solid #e1e7ec;
+
+    background: #f8fafc;
+
+    color: #37474f;
+
+    line-height: 1.5;
+
+    vertical-align: middle;
+}
+
+
+/* ================================
+   NAPEMIENNE WIERSZE
+================================ */
+
+tbody tr:nth-child(even) td {
+    background: #f0f5f9;
+}
+
+
+/* ================================
+   HOVER
+================================ */
+
+tbody tr {
+    transition:
+            transform 0.2s ease,
+            box-shadow 0.2s ease;
+}
+
+tbody tr:hover td {
+    background: #e5f3fa;
+}
+
+tbody tr:hover {
+    transform: scale(1.005);
+}
+
+
+/* ================================
+   OSTATNI WIERSZ
+================================ */
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+/* ================================
+   KOLUMNA Z OBRAZKAMI
+================================ */
+
+.symbol {
+    width: 190px;
+
+    padding: 12px;
+
+    text-align: center;
+
+    background: #f4f8fb !important;
+}
+
+
+/* ================================
+   OBRAZKI
+================================ */
+
+.symbol img {
+    display: block;
+
+    width: auto;
+    height: auto;
+
+    max-width: 150px;
+    max-height: 65px;
+
+    margin: 0 auto;
+
+    object-fit: contain;
+
+    transition:
+            transform 0.25s ease,
+            filter 0.25s ease;
+}
+
+.symbol img:hover {
+    transform: scale(1.08);
+
+    filter: drop-shadow(
+            0 3px 5px rgba(0, 0, 0, 0.15)
+    );
+}
+
+
+/* ================================
+   POGRUBIENIA
+================================ */
+
+strong {
+    color: #243b53;
+}
+
+
+/* ================================
+   RESPONSYWNOŚĆ
+================================ */
+
+@media (max-width: 900px) {
+
+    body {
+        padding: 20px 12px;
+    }
+
+    body > h1 {
+        padding: 20px;
+
+        font-size: 27px;
+    }
+
+    body > p,
+    body > h2,
+    body > .highlight,
+    body > .blue-title,
+    body > .page-number,
+    .page-table {
+        width: 100%;
+    }
+
+    .page-table {
+        padding: 18px;
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    body > h1 {
+        font-size: 23px;
+    }
+
+    body > p,
+    .highlight {
+        font-size: 14px;
+    }
+
+    body > h2 {
+        font-size: 21px;
+    }
+
+    .page-table {
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 650px;
+    }
+}
+
+
+/* ================================
+   DRUKOWANIE
+================================ */
+
+@media print {
+
+    body {
+        padding: 0;
+        background: white;
+    }
+
+    body > h1,
+    body > p,
+    body > h2,
+    body > .highlight,
+    body > .blue-title,
+    body > .page-number,
+    .page-table {
+        width: 100%;
+        max-width: none;
+    }
+
+    .page-table {
+        margin-top: 30px;
+
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+
+    tbody tr:hover {
+        transform: none;
+    }
+
+    .symbol img:hover {
+        transform: none;
+        filter: none;
+    }
+}

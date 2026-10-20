@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let min = parseInt(prompt('Podaj wartość minimalną: ',''))
+  let max = parseInt(prompt('Podaj wartość maksymalną: ',''))
+
+  let p1 = Math.floor(Math.random() * (max - min + 1) + min)
+  let p2 = Math.floor(Math.random() * (max - min + 1) + min)
+  let p3 = Math.floor(Math.random() * (max - min + 1) + min)
+  let p4 = Math.floor(Math.random() * (max - min + 1) + min)
+  let p5 = Math.floor(Math.random() * (max - min + 1) + min)
+
+  let suma = p1 + p2 + p3 + p4 + p5
+  let iloczyn = p1 * p2 * p3 * p4 * p5
+  let srednia = suma / 5
+
+  document.write('min = ' + min + '<br>')
+  document.write('max = ' + max + '<br>')
+  document.write('p1 = ' + p1 + '<br>')
+  document.write('p2 = ' + p2 + '<br>')
+  document.write('p3 = ' + p3 + '<br>')
+  document.write('p4 = ' + p4 + '<br>')
+  document.write('p5 = ' + p5 + '<br>')
+  document.write(p1 + '+' + p2 + '+' + p3 + '+' + p4 + '+' + p5 + '=' + suma + '<br>')
+  document.write(p1 + '+' + p2 + '+' + p3 + '+' + p4 + '+' + p5 + '=' + iloczyn + '<br>')
+
+  document.write('średnia = ' + srednia + '<br>')
+</script>
+</body>
+</html>

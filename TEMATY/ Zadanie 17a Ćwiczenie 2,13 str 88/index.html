@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz rejestracyjny</title>
+</head>
+<body>
+
+<h1>Formularz rejestracyjny</h1>
+
+<form action="http://localhost/skrypt_form.php" method="post">
+
+    <table>
+        <tr>
+            <td><label for="nazw">Podaj swoje nazwisko:</label></td>
+            <td><input type="text" id="nazw" name="nazw" size="30" required></td>
+        </tr>
+        <tr>
+            <td><label for="im">Podaj swoje imię:</label></td>
+            <td><input type="text" id="im" name="im" size="30" required></td>
+        </tr>
+    </table>
+
+    <p>Wybierz płeć:</p>
+    <input type="radio" id="kobieta" value="kobieta" name="plec" required>
+    <label for="kobieta">Kobieta</label>
+
+    <input type="radio" id="mezczyzna" value="mężczyzna" name="plec">
+    <label for="mezczyzna">Mężczyzna</label>
+
+    <p>Podaj wiek:</p>
+    <input list="wiek" name="wiek" id="wiek-input">
+
+    <datalist id="wiek">
+        <option value="16-24">
+        <option value="25-39">
+        <option value="40-60">
+        <option value="powyżej 60">
+    </datalist>
+
+    <p><label for="adr">Podaj adres e-mail:</label></p>
+    <input type="email" id="adr" name="adr" size="30" required>
+
+    <p>Wybierz wykształcenie:</p>
+    <input type="radio" id="podstawowe" value="podstawowe" name="wykszt" required>
+    <label for="podstawowe">Podstawowe</label><br>
+
+    <input type="radio" id="srednie" value="średnie" name="wykszt">
+    <label for="srednie">Średnie</label><br>
+
+    <input type="radio" id="wyzsze" value="wyższe" name="wykszt">
+    <label for="wyzsze">Wyższe</label>
+
+    <p>Wybierz języki:</p>
+    <select name="jezyki[]" id="jezyki" size="6" multiple>
+        <option value="angielski">Język angielski</option>
+        <option value="niemiecki">Język niemiecki</option>
+        <option value="francuski">Język francuski</option>
+        <option value="wloski">Język włoski</option>
+        <option value="rosyjski">Język rosyjski</option>
+        <option value="hiszpanski">Język hiszpański</option>
+    </select>
+
+    <p>Wybierz zainteresowania:</p>
+    <input type="checkbox" id="moto" name="hobby[]" value="moto">
+    <label for="moto">Motoryzacja</label><br>
+
+    <input type="checkbox" id="sport" name="hobby[]" value="sport">
+    <label for="sport">Sport</label><br>
+
+    <input type="checkbox" id="muza" name="hobby[]" value="muza">
+    <label for="muza">Muzyka</label><br>
+
+    <input type="checkbox" id="tan" name="hobby[]" value="tan">
+    <label for="tan">Taniec</label><br>
+
+    <input type="checkbox" id="gry" name="hobby[]" value="gry">
+    <label for="gry">Gry komputerowe</label><br>
+
+    <input type="checkbox" id="inna" name="hobby_inne_checkbox" value="inna">
+    <label for="inna">Inne (podaj jakie):</label>
+    <input type="text" name="hobby_inne" id="hobby_inne">
+
+    <p><label for="uwagi">Wpisz swoje uwagi:</label></p>
+    <textarea name="uwagi" id="uwagi" cols="37" rows="7"></textarea>
+
+    <p>
+        <input type="checkbox" id="opcje" name="opcje" value="tak" required>
+        <label for="opcje">
+            Zgadzam się na przetwarzanie moich danych osobowych.
+        </label>
+    </p>
+
+    <p>
+        <input type="submit" value="Wyślij" name="wyslij">
+        <input type="reset" value="Wyczyść" name="zeruj">
+    </p>
+
+</form>
+
+</body>
+</html>

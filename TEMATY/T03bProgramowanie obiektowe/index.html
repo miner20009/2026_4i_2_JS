@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Programowanie obiektowe</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="hero">
+  <div class="hero-content">
+    <span class="chapter-number">1.1.3</span>
+    <h1>Programowanie obiektowe</h1>
+    <p>
+      Poznaj podstawowe pojęcia, zasady oraz cechy
+      programowania obiektowego.
+    </p>
+  </div>
+</header>
+
+
+<main class="container">
+
+  <!-- WPROWADZENIE -->
+
+  <section class="card intro">
+
+    <div class="section-icon">01</div>
+
+    <div>
+      <h2>Programowanie obiektowe</h2>
+
+      <p>
+        Języki obiektowe w różnym stopniu stosują zasady obiektowości.
+        Popularnymi językami obiektowymi są Java, C# i Python, chociaż
+        pojawiają się w nich elementy programowania proceduralności.
+      </p>
+
+      <p>
+        Języki C++ i Perl, które pierwotnie były językami programowania
+        strukturalnego, zostały wyposażone o elementy obiektowości.
+        Niektóre języki, mimo iż nie są językami obiektowymi, pozwalają
+        na stosowanie w ograniczonym zakresie niektórych metod
+        programowania obiektowego.
+      </p>
+
+      <p>
+        Językami w pełni obiektowymi są C# i Ruby, które wymuszają
+        stosowanie metod programowania obiektowego.
+      </p>
+
+      <div class="info-box">
+        <strong>Przykład:</strong>
+        Obiektowość występuje zwykle w systemach hybrydowych
+        w połączeniu z programowaniem sieciowym lub skryptowym.
+      </div>
+
+      <p>
+        W programowaniu obiektowym program to zbiór powiązanych
+        obiektów, które na siebie oddziałują.
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- OBIEKT -->
+
+  <section class="card">
+
+    <div class="section-icon">02</div>
+
+    <div>
+      <h2>Obiekt</h2>
+
+      <p>
+        <strong>Obiekt</strong> to element, który jest opisywany przez
+        <span class="highlight">stan</span> (właściwości) i
+        <span class="highlight">zachowanie</span> (metody, czyli funkcje).
+      </p>
+
+      <p>
+        Właściwości obiektu opisują jego cechy, na przykład:
+      </p>
+
+      <ul class="custom-list">
+        <li>łańcuch</li>
+        <li>wymiary okna</li>
+        <li>liczby</li>
+        <li>wartości logiczne</li>
+        <li>inne dane opisujące stan obiektu</li>
+      </ul>
+
+      <p>
+        Są też nazywane polami obiektu, zmiennymi lub zmiennymi
+        składowymi. Metody to funkcje, które wykonują operacje
+        na obiekcie.
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- KLASA -->
+
+  <section class="card">
+
+    <div class="section-icon">03</div>
+
+    <div>
+      <h2>Klasa</h2>
+
+      <p>
+        <strong>Klasa</strong> jest specjalną strukturą opisującą
+        grupę powiązanych ze sobą obiektów.
+      </p>
+
+      <p>
+        Definiuje ona:
+      </p>
+
+      <ul class="custom-list">
+        <li>metody (funkcjonalność),</li>
+        <li>atrybuty wybranych obiektów.</li>
+      </ul>
+
+      <p>
+        Obiekt jest instancją danej klasy.
+      </p>
+
+      <div class="quote">
+        <span class="quote-mark">“</span>
+        Klasa opisuje właściwości oraz zachowania obiektów,
+        natomiast obiekt jest konkretnym wystąpieniem klasy.
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- PROGRAMOWANIE OBIEKTOWE -->
+
+  <section class="card">
+
+    <div class="section-icon">04</div>
+
+    <div>
+      <h2>Programowanie obiektowe</h2>
+
+      <p>
+        Programowanie obiektowe opiera się na tworzeniu programów,
+        które przedstawiają świat rzeczywisty i nie w nim zachodzące
+        za pomocą obiektów.
+      </p>
+
+      <p>
+        Program powinien być tak skonstruowany, aby jak najlepiej
+        odzwierciedlał opisywany fragment rzeczywistości.
+      </p>
+
+      <p>
+        Klasa opisuje za pomocą właściwości (zmiennych) i metod
+        (funkcji) fragment świata rzeczywistego.
+      </p>
+
+      <p>
+        Właściwości zawierają informacje o stanie tego fragmentu,
+        a metody pozwalają na kontrolę i zmianę tego stanu.
+      </p>
+
+      <div class="formula-box">
+        <span>KLASA</span>
+        <span class="arrow">→</span>
+        <span>OBIEKT</span>
+        <span class="arrow">→</span>
+        <span>INSTANCJA</span>
+      </div>
+
+      <p>
+        Obiekt to wystąpienie (konkretna instancja) danej klasy.
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- DOBRY ZWYCZAJ -->
+
+  <section class="card tip-card">
+
+    <div class="section-icon">05</div>
+
+    <div>
+      <h2>Dobry zwyczaj programowania</h2>
+
+      <p>
+        Dobrym zwyczajem jest dzielenie kodu źródłowego na klasy
+        ze względu na funkcje.
+      </p>
+
+      <p>
+        Przykładowo jedna klasa odpowiada za obsługę błędów,
+        inna za wyświetlanie komunikatów.
+      </p>
+
+      <div class="tip">
+        <strong>💡 Wskazówka</strong>
+        <p>
+          Podział programu na odpowiedzialne klasy ułatwia
+          jego rozwój, czytelność oraz późniejsze modyfikacje.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- PODEJŚCIA -->
+
+  <section class="card">
+
+    <div class="section-icon">06</div>
+
+    <div>
+      <h2>Dwa podejścia do programowania obiektowego</h2>
+
+      <p>
+        Wyróżniamy dwa podejścia do programowania obiektowego:
+      </p>
+
+      <div class="approaches">
+
+        <div class="approach">
+          <div class="approach-number">01</div>
+          <div>
+            <h3>Programowanie oparte na klasach</h3>
+            <p>
+              Najpierw definiowane są klasy, a następnie
+              tworzone są obiekty będące elementami
+              wybranej klasy.
+            </p>
+          </div>
+        </div>
+
+        <div class="approach">
+          <div class="approach-number">02</div>
+          <div>
+            <h3>Programowanie oparte na prototypach</h3>
+            <p>
+              Nowe obiekty mogą być tworzone na podstawie
+              istniejących już obiektów.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- CECHY OBIEKTOWOŚCI -->
+
+  <section class="features-section">
+
+    <div class="section-heading">
+      <span>NAJWAŻNIEJSZE INFORMACJE</span>
+      <h2>Cechy obiektowości</h2>
+      <p>
+        Język obiektowy powinien charakteryzować się
+        określonymi cechami.
+      </p>
+    </div>
+
+
+    <div class="features-grid">
+
+      <div class="feature">
+        <div class="feature-icon">A</div>
+        <h3>Abstrakcja</h3>
+        <p>
+          Uproszczenie rozpatrywanego problemu polegające
+          na wyodrębnieniu wspólnych cech dla danego zbioru
+          elementów.
+        </p>
+      </div>
+
+
+      <div class="feature">
+        <div class="feature-icon">H</div>
+        <h3>Hermetyzacja</h3>
+        <p>
+          Ukrywanie pewnych właściwości lub metod obiektów
+          określonej klasy. Są one dostępne tylko w obrębie
+          klasy.
+        </p>
+      </div>
+
+
+      <div class="feature">
+        <div class="feature-icon">D</div>
+        <h3>Dziedziczenie</h3>
+        <p>
+          Mechanizm pozwalający na tworzenie klas na podstawie
+          innych wcześniej utworzonych klas.
+        </p>
+      </div>
+
+
+      <div class="feature">
+        <div class="feature-icon">P</div>
+        <h3>Polimorfizm</h3>
+        <p>
+          Wielopostaciowość umożliwiająca tworzenie obiektu,
+          który ma więcej niż jedną formę.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ABSTRAKCJA -->
+
+  <section class="definition">
+
+    <div class="definition-number">01</div>
+
+    <div>
+      <h2>Abstrakcja</h2>
+
+      <p>
+        Można powiedzieć, że każde uogólnienie (uproszczenie)
+        rozpatrywanego problemu, które polega na wyodrębnieniu
+        wspólnych cech dla danego zbioru elementów, jest
+        <strong>abstrakcją</strong>.
+      </p>
+
+      <p>
+        Analizując problem, skupiamy się na ogólnych cechach
+        tego zbioru elementów, a nie na właściwościach
+        poszczególnych elementów.
+      </p>
+    </div>
+
+  </section>
+
+
+  <!-- HERMETYZACJA -->
+
+  <section class="definition">
+
+    <div class="definition-number">02</div>
+
+    <div>
+      <h2>Hermetyzacja</h2>
+
+      <p>
+        <strong>Hermetyzacja</strong>, inaczej enkapsulacja,
+        to ukrywanie pewnych właściwości (danych składowych)
+        lub metod obiektów określonej klasy.
+      </p>
+
+      <p>
+        Dzięki temu są one dostępne tylko w obrębie klasy.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- DZIEDZICZENIE -->
+
+  <section class="definition">
+
+    <div class="definition-number">03</div>
+
+    <div>
+      <h2>Dziedziczenie</h2>
+
+      <p>
+        Mechanizm dziedziczenia pozwala na tworzenie klas
+        na podstawie innych wcześniej utworzonych klas.
+      </p>
+
+      <p>
+        Nowa klasa ma właściwości i metody zdefiniowane dla niej
+        oraz właściwości i metody klasy, na podstawie której
+        została utworzona.
+      </p>
+
+      <div class="code-example">
+        <span class="purple">public</span>
+        <span class="blue">class</span>
+        <span class="white">NowaKlasa</span>
+        <span class="gray">:</span>
+        <span class="yellow">StaraKlasa</span>
+      </div>
+
+      <p>
+        Dziedziczone elementy mogą zostać zdefiniowane jako
+        <em>public</em> i <em>protected</em>. Natomiast niedostępne
+        są właściwości i metody zdefiniowane jako <em>private</em>.
+      </p>
+
+      <p>
+        W językach programowania, w których nie występuje pojęcie
+        klasy, dziedziczenie zachodzi pomiędzy poszczególnymi
+        obiektami.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- POLIMORFIZM -->
+
+  <section class="definition">
+
+    <div class="definition-number">04</div>
+
+    <div>
+      <h2>Polimorfizm</h2>
+
+      <p>
+        Słowo <strong>polimorfizm</strong> oznacza
+        wielopostaciowość.
+      </p>
+
+      <p>
+        W programowaniu obiektowym polimorfizm to możliwość
+        stworzenia obiektu, który ma więcej niż jedną formę.
+      </p>
+
+      <p>
+        Oznacza to, że możliwe są wystąpienia funkcji o tej samej
+        nazwie, zawierających różne zestawy argumentów i operatorów
+        działających w różny sposób, w zależności od typów argumentów.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- PODSUMOWANIE -->
+
+  <section class="summary">
+
+    <div class="summary-content">
+
+      <span class="summary-label">PODSUMOWANIE</span>
+
+      <h2>4 filary programowania obiektowego</h2>
+
+      <div class="pill-container">
+        <span>Abstrakcja</span>
+        <span>Hermetyzacja</span>
+        <span>Dziedziczenie</span>
+        <span>Polimorfizm</span>
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
+
+
+<footer>
+  <p>Programowanie obiektowe • Podstawy programowania
+  Dominik Meyer klasa 4I</p>
+</footer>
+
+</body>
+</html>

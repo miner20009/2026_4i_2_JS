@@ -1,0 +1,194 @@
+/* =========================
+   USTAWIENIA GŁÓWNE
+========================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #e9edf2;
+    color: #20252b;
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   STRONA
+========================= */
+
+.page {
+    width: min(900px, 92%);
+    min-height: 1100px;
+    margin: 40px auto;
+    padding: 55px 70px 70px;
+
+    background: #ffffff;
+
+    box-shadow:
+            0 10px 30px rgba(0, 0, 0, 0.10);
+
+    border-radius: 4px;
+
+    position: relative;
+}
+
+
+/* =========================
+   NAGŁÓWEK
+========================= */
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    margin-bottom: 32px;
+
+    border-bottom: 2px solid #e5e9ed;
+    padding-bottom: 15px;
+}
+
+.chapter-number {
+    color: #0864b7;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+h1 {
+    color: #1d252d;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 34px;
+    font-weight: 500;
+}
+
+
+/* =========================
+   TREŚĆ
+========================= */
+
+.content {
+    font-size: 17px;
+}
+
+.content p {
+    margin-bottom: 24px;
+    text-align: justify;
+}
+
+.content strong {
+    color: #111820;
+    font-weight: 700;
+}
+
+
+/* =========================
+   NAGŁÓWEK LISTY
+========================= */
+
+h2 {
+    margin-top: 30px;
+    margin-bottom: 16px;
+
+    color: #252c33;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+/* =========================
+   LISTA
+========================= */
+
+ul {
+    list-style: none;
+    padding-left: 8px;
+}
+
+li {
+    position: relative;
+
+    margin-bottom: 15px;
+    padding-left: 30px;
+
+    text-align: justify;
+}
+
+li::before {
+    content: "";
+
+    position: absolute;
+    left: 5px;
+    top: 10px;
+
+    width: 8px;
+    height: 8px;
+
+    background: #0874c9;
+    border-radius: 50%;
+}
+
+
+/* =========================
+   NUMER STRONY
+========================= */
+
+.page-number {
+    position: absolute;
+    right: 55px;
+    bottom: 25px;
+
+    color: #555;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+
+    padding-top: 8px;
+    border-top: 1px solid #bbb;
+}
+
+
+/* =========================
+   RESPONSYWNOŚĆ
+========================= */
+
+@media (max-width: 700px) {
+
+    .page {
+        width: 95%;
+        margin: 15px auto;
+        padding: 35px 25px 65px;
+    }
+
+    .header {
+        gap: 10px;
+    }
+
+    .chapter-number {
+        font-size: 25px;
+    }
+
+    h1 {
+        font-size: 27px;
+    }
+
+    .content {
+        font-size: 16px;
+    }
+
+    .content p,
+    li {
+        text-align: left;
+    }
+
+    .page-number {
+        right: 25px;
+    }
+}

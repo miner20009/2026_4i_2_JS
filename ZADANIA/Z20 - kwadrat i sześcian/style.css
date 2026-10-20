@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #e8f0ff, #f7f9fc);
+    color: #222;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+header {
+    max-width: 850px;
+    margin: 0 auto 25px;
+    text-align: center;
+}
+
+header h1 {
+    color: #2563eb;
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+header h2 {
+    color: #64748b;
+    font-size: 17px;
+    font-weight: normal;
+}
+
+header hr {
+    border: none;
+    height: 2px;
+    background: #2563eb;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+main {
+    max-width: 850px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+main section {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+section p {
+    line-height: 1.6;
+    color: #475569;
+    margin-bottom: 25px;
+}
+
+label {
+    display: inline-block;
+    width: 150px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #334155;
+}
+
+input {
+    width: calc(100% - 155px);
+    padding: 10px 12px;
+    border: 2px solid #dbe3ef;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.2s;
+}
+
+input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 13px;
+    border: none;
+    border-radius: 9px;
+    background-color: #2563eb;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-1px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+.wynik {
+    border-left: 5px solid #2563eb;
+    line-height: 1.9;
+    color: #334155;
+}
+
+.wynik::before {
+    content: "Wynik obliczeń";
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+    color: #2563eb;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 700px) {
+    body {
+        padding: 25px 15px;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    main section {
+        padding: 22px;
+    }
+
+    label {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

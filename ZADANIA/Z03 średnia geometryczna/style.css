@@ -1,0 +1,249 @@
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background:
+            radial-gradient(circle at top left, #273c75 0%, transparent 35%),
+            radial-gradient(circle at bottom right, #6c2bd9 0%, transparent 35%),
+            #0f1220;
+    color: #f5f7ff;
+    padding: 40px 20px;
+}
+
+/* Nagłówek */
+header {
+    max-width: 900px;
+    margin: 0 auto 30px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin-bottom: 10px;
+
+    background: linear-gradient(90deg, #6ea8ff, #b76cff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+
+}
+
+header h2 {
+    color: #aeb6d4;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+header hr {
+    border: none;
+    height: 1px;
+    margin-top: 25px;
+    background: linear-gradient(
+            90deg,
+            transparent,
+            #5967a8,
+            transparent
+    );
+}
+
+/* Główna zawartość */
+main {
+    max-width: 900px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 0.8fr;
+    gap: 25px;
+
+
+}
+
+/* Karty */
+section {
+    background: rgba(24, 28, 48, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 24px;
+    padding: 30px;
+
+    box-shadow:
+            0 20px 50px rgba(0, 0, 0, 0.35),
+            inset 0 1px 0 rgba(255, 255, 255, 0.04);
+
+    backdrop-filter: blur(15px);
+
+
+}
+
+/* Opis zadania */
+section:first-child p {
+    color: #c6cce3;
+    line-height: 1.7;
+    font-size: 0.98rem;
+    margin-bottom: 25px;
+}
+
+/* Formularz */
+label {
+    display: inline-block;
+    width: 150px;
+    margin-bottom: 15px;
+
+    color: #e5e9fa;
+    font-weight: 600;
+
+
+}
+
+input {
+    width: calc(100% - 160px);
+    padding: 12px 15px;
+
+    border: 1px solid #3d4568;
+    border-radius: 12px;
+    outline: none;
+
+    background: #121627;
+    color: white;
+    font-size: 1rem;
+
+    transition: 0.25s ease;
+
+
+}
+
+input:focus {
+    border-color: #7b61ff;
+    box-shadow: 0 0 0 4px rgba(123, 97, 255, 0.15);
+    transform: translateY(-1px);
+}
+
+input::placeholder {
+    color: #68708e;
+}
+
+/* Przycisk */
+button {
+    width: 100%;
+    margin-top: 15px;
+    padding: 14px 20px;
+
+    border: none;
+    border-radius: 13px;
+
+    background: linear-gradient(135deg, #5865f2, #9147ff);
+    color: white;
+
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+
+    box-shadow: 0 10px 25px rgba(108, 71, 255, 0.3);
+
+    transition:
+            transform 0.2s ease,
+            box-shadow 0.2s ease,
+            filter 0.2s ease;
+
+
+}
+
+button:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.1);
+    box-shadow: 0 14px 30px rgba(108, 71, 255, 0.45);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Wynik */
+.wynik {
+    min-height: 300px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    color: #dce2fa;
+    line-height: 2;
+
+    position: relative;
+    overflow: hidden;
+
+
+}
+
+.wynik::before {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+
+    background: rgba(116, 91, 255, 0.12);
+    filter: blur(30px);
+
+    top: -70px;
+    right: -50px;
+
+
+}
+
+.wynik::after {
+    content: "WYNIK";
+    position: absolute;
+
+    top: 20px;
+    right: 25px;
+
+    color: rgba(255, 255, 255, 0.15);
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+
+
+}
+
+.wynik br {
+    line-height: 2;
+}
+
+/* Responsywność */
+@media (max-width: 700px) {
+    body {
+        padding: 25px 15px;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 22px;
+        border-radius: 18px;
+    }
+
+    label {
+        width: 100%;
+        margin-bottom: 7px;
+    }
+
+    input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    button {
+        margin-top: 10px;
+    }
+
+
+}

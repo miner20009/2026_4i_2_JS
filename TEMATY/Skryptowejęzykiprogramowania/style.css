@@ -1,0 +1,684 @@
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   BODY
+========================================= */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background:
+            linear-gradient(
+                    135deg,
+                    #eef4ff 0%,
+                    #f8faff 50%,
+                    #eef7ff 100%
+            );
+
+    color: #27364b;
+
+    line-height: 1.7;
+
+    min-height: 100vh;
+
+    padding: 50px 20px;
+}
+
+
+/* =========================================
+   GŁÓWNY KONTENER
+========================================= */
+
+.container {
+    max-width: 950px;
+
+    margin: 0 auto;
+
+    background: #ffffff;
+
+    border-radius: 24px;
+
+    padding: 50px 60px;
+
+    box-shadow:
+            0 20px 60px rgba(36, 71, 120, 0.12);
+}
+
+
+/* =========================================
+   GŁÓWNY NAGŁÓWEK
+========================================= */
+
+.page-header,
+.topic-header {
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    padding-bottom: 30px;
+
+    margin-bottom: 35px;
+
+    border-bottom: 2px solid #edf2f8;
+}
+
+
+.chapter {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 85px;
+    height: 85px;
+
+    flex-shrink: 0;
+
+    background:
+            linear-gradient(
+                    135deg,
+                    #1769e0,
+                    #4f9cff
+            );
+
+    color: white;
+
+    font-size: 21px;
+
+    font-weight: bold;
+
+    border-radius: 20px;
+
+    box-shadow:
+            0 10px 25px rgba(23, 105, 224, 0.25);
+}
+
+
+.page-header h1,
+.topic-header h1 {
+    color: #172a46;
+
+    font-size: 34px;
+
+    line-height: 1.2;
+
+    margin-bottom: 5px;
+}
+
+
+.subtitle {
+    color: #718096;
+
+    font-size: 15px;
+
+    margin: 0;
+}
+
+
+/* =========================================
+   TEKST
+========================================= */
+
+p {
+    font-family:
+            Georgia,
+            "Times New Roman",
+            serif;
+
+    font-size: 17px;
+
+    margin-bottom: 22px;
+
+    color: #3e4b5d;
+}
+
+
+strong {
+    color: #172a46;
+}
+
+
+/* =========================================
+   SEKCJA POPULARNYCH JĘZYKÓW
+========================================= */
+
+.languages {
+    background: #f5f9ff;
+
+    border: 1px solid #e2ecfb;
+
+    border-radius: 18px;
+
+    padding: 28px 32px;
+
+    margin: 35px 0;
+}
+
+
+.languages h2 {
+    color: #1769e0;
+
+    font-size: 23px;
+
+    margin-bottom: 10px;
+}
+
+
+.languages p {
+    margin-bottom: 12px;
+}
+
+
+/* =========================================
+   LISTY
+========================================= */
+
+ul {
+    list-style: none;
+
+    padding: 0;
+}
+
+
+li {
+    position: relative;
+
+    padding: 8px 0 8px 30px;
+
+    font-family:
+            Georgia,
+            "Times New Roman",
+            serif;
+
+    font-size: 17px;
+
+    color: #34445a;
+}
+
+
+li::before {
+    content: "";
+
+    position: absolute;
+
+    left: 3px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 9px;
+    height: 9px;
+
+    background: #1769e0;
+
+    border-radius: 50%;
+}
+
+
+/* =========================================
+   KARTY JĘZYKÓW
+========================================= */
+
+.language-card {
+    display: flex;
+
+    gap: 25px;
+
+    padding: 30px;
+
+    margin-top: 25px;
+
+    background: #ffffff;
+
+    border-radius: 20px;
+
+    border: 1px solid #e6ebf2;
+
+    box-shadow:
+            0 8px 25px rgba(31, 51, 73, 0.07);
+
+    transition:
+            transform 0.25s ease,
+            box-shadow 0.25s ease;
+}
+
+
+.language-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+            0 15px 35px rgba(31, 51, 73, 0.12);
+}
+
+
+/* =========================================
+   NUMERY KART
+========================================= */
+
+.card-number {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 55px;
+    height: 55px;
+
+    flex-shrink: 0;
+
+    border-radius: 15px;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+}
+
+
+/* =========================================
+   KOLORY JAVASCRIPT / PYTHON / PHP
+========================================= */
+
+.javascript {
+    border-left: 5px solid #f7c948;
+}
+
+
+.javascript .card-number {
+    background:
+            linear-gradient(
+                    135deg,
+                    #e7b500,
+                    #f7c948
+            );
+}
+
+
+.python {
+    border-left: 5px solid #3776ab;
+}
+
+
+.python .card-number {
+    background:
+            linear-gradient(
+                    135deg,
+                    #24669a,
+                    #4c9ed9
+            );
+}
+
+
+.php {
+    border-left: 5px solid #777bb4;
+}
+
+
+.php .card-number {
+    background:
+            linear-gradient(
+                    135deg,
+                    #5d6096,
+                    #898cc5
+            );
+}
+
+
+/* =========================================
+   TREŚĆ KART
+========================================= */
+
+.card-content {
+    flex: 1;
+}
+
+
+.card-content h2 {
+    font-size: 27px;
+
+    color: #172a46;
+
+    margin-bottom: 12px;
+}
+
+
+.card-content p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================================
+   NAGŁÓWEK BIBLIOTEK
+========================================= */
+
+.libraries-header {
+    margin-top: 75px;
+}
+
+
+.libraries-header .chapter {
+    background:
+            linear-gradient(
+                    135deg,
+                    #7c3aed,
+                    #a855f7
+            );
+
+    box-shadow:
+            0 10px 25px rgba(124, 58, 237, 0.25);
+}
+
+
+/* =========================================
+   LISTA BIBLIOTEK
+========================================= */
+
+.library-list {
+    margin-top: 30px;
+
+    padding: 30px 32px;
+
+    background:
+            linear-gradient(
+                    135deg,
+                    #faf7ff,
+                    #f5f0ff
+            );
+
+    border: 1px solid #e8ddff;
+
+    border-radius: 20px;
+
+    box-shadow:
+            0 8px 25px rgba(124, 58, 237, 0.06);
+}
+
+
+.list-title {
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    margin-bottom: 12px;
+}
+
+
+.list-title h2 {
+    color: #6d28d9;
+
+    font-size: 23px;
+}
+
+
+.list-icon {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+
+    border-radius: 12px;
+
+    background: #7c3aed;
+
+    color: white;
+
+    font-weight: bold;
+
+    font-size: 20px;
+}
+
+
+.library-list li::before {
+    background: #7c3aed;
+}
+
+
+/* =========================================
+   TYPY BIBLIOTEK
+========================================= */
+
+.library-types {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+
+    margin-top: 25px;
+}
+
+
+.type-box {
+    display: flex;
+
+    gap: 18px;
+
+    padding: 25px;
+
+    border-radius: 18px;
+
+    border: 1px solid #e5e9f0;
+
+    background: white;
+
+    box-shadow:
+            0 7px 20px rgba(31, 51, 73, 0.06);
+
+    transition:
+            transform 0.25s ease,
+            box-shadow 0.25s ease;
+}
+
+
+.type-box:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+            0 12px 28px rgba(31, 51, 73, 0.1);
+}
+
+
+.type-icon {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 50px;
+    height: 50px;
+
+    flex-shrink: 0;
+
+    border-radius: 14px;
+
+    color: white;
+
+    font-size: 20px;
+
+    font-weight: bold;
+}
+
+
+.type-box h3 {
+    color: #172a46;
+
+    font-size: 19px;
+
+    margin-bottom: 8px;
+}
+
+
+.type-box p {
+    font-size: 15px;
+
+    margin-bottom: 0;
+}
+
+
+/* BIBLIOTEKI STATYCZNE */
+
+.static {
+    border-top: 4px solid #2563eb;
+}
+
+
+.static .type-icon {
+    background:
+            linear-gradient(
+                    135deg,
+                    #2563eb,
+                    #60a5fa
+            );
+}
+
+
+/* BIBLIOTEKI DYNAMICZNE */
+
+.dynamic {
+    border-top: 4px solid #10b981;
+}
+
+
+.dynamic .type-icon {
+    background:
+            linear-gradient(
+                    135deg,
+                    #059669,
+                    #34d399
+            );
+}
+
+
+/* =========================================
+   STOPKA
+========================================= */
+
+footer {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 50px;
+
+    padding-top: 25px;
+
+    border-top: 1px solid #e7edf5;
+
+    color: #7a8798;
+
+    font-size: 14px;
+}
+
+
+.separator {
+    color: #1769e0;
+
+    font-size: 18px;
+}
+
+
+/* =========================================
+   RESPONSYWNOŚĆ
+========================================= */
+
+@media (max-width: 700px) {
+
+    body {
+        padding: 20px 12px;
+    }
+
+
+    .container {
+        padding: 30px 22px;
+
+        border-radius: 18px;
+    }
+
+
+    .page-header,
+    .topic-header {
+        align-items: flex-start;
+
+        gap: 15px;
+    }
+
+
+    .chapter {
+        width: 65px;
+        height: 65px;
+
+        font-size: 16px;
+
+        border-radius: 15px;
+    }
+
+
+    .page-header h1,
+    .topic-header h1 {
+        font-size: 25px;
+    }
+
+
+    p {
+        font-size: 16px;
+    }
+
+
+    .language-card {
+        padding: 22px;
+
+        gap: 15px;
+    }
+
+
+    .card-number {
+        width: 45px;
+        height: 45px;
+    }
+
+
+    .card-content h2 {
+        font-size: 23px;
+    }
+
+
+    .library-types {
+        grid-template-columns: 1fr;
+    }
+
+
+    .library-list {
+        padding: 24px;
+    }
+
+
+    footer {
+        flex-wrap: wrap;
+    }
+}

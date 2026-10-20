@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Demo - odległość punktów</title>
+</head>
+<body>
+
+<script>
+  let x1 = parseFloat(prompt('Podaj x1:', '0'))
+  let y1 = parseFloat(prompt('Podaj y1:', '0'))
+  let x2 = parseFloat(prompt('Podaj x2:', '1'))
+  let y2 = parseFloat(prompt('Podaj y2:', '1'))
+
+  let odleglosc = Math.sqrt(
+          (x1 - x2) ** 2 + (y1 - y2) ** 2
+  )
+
+  document.write('Punkt A: (' + x1 + ', ' + y1 + ')<br>')
+  document.write('Punkt B: (' + x2 + ', ' + y2 + ')<br>')
+  document.write('Odległość między punktami: ' + odleglosc.toFixed(2))
+</script>
+
+</body>
+</html>

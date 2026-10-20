@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    let a = prompt('Podaj a','')
+    let b = prompt('Podaj b','')
+    let c = prompt('Podaj c','')
+    let d = prompt('Podaj d','')
+    a = parseFloat(a)
+    b = parseFloat(b)
+    c = parseFloat(c)
+    d = parseFloat(d)
+
+    let srednia_geometryczna = Math.pow((a*b*c*d),0.25)
+    document.writeln('a = '+a+'<br>')
+    document.writeln('b = '+b+'<br>')
+    document.writeln('c = '+c+'<br>')
+    document.writeln('d = '+d+'<br>')
+    document.write('srednia_geometryczna = ' + srednia_geometryczna + '<br>')
+    document.write('średnia geometryczna zaokrąglona = '+srednia_geometryczna.toFixed(3)+'<br>')
+</script>
+
+</body>
+</html>

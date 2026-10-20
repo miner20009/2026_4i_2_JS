@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo - pole i objętość kuli</title>
+</head>
+<body>
+<script>
+    let r = parseFloat(prompt('Podaj promień kuli: ', ''));
+
+    let pole = 4 * Math.PI * r * r;
+    let objetosc = (4 / 3) * Math.PI * r * r * r;
+
+    document.write('Promień kuli = ' + r + '<br>');
+    document.write('Pole powierzchni kuli = ' + pole.toFixed(2) + '<br>');
+    document.write('Objętość kuli = ' + objetosc.toFixed(2));
+</script>
+</body>
+</html>

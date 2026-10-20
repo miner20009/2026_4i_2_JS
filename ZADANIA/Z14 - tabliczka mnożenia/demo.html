@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabliczka mnożenia</title>
+</head>
+<body>
+
+<script>
+    let x = parseFloat(prompt('Podaj wartość x: ', ''))
+
+    x = parseInt(x)
+
+    document.write('x = ' + x + '<br>')
+
+    for (let i = 0; i <= 10; i++) {
+        let wynik = i * x
+
+        document.write(i + ' x ' + x + ' = ' + wynik + '<br>')
+    }
+</script>
+
+</body>
+</html>

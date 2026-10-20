@@ -1,0 +1,225 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    background: #f1f3f6;
+
+    color: #222;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 16px;
+    line-height: 1.42;
+}
+
+
+/* =========================
+   GŁÓWNY DOKUMENT
+========================= */
+
+.document {
+    width: min(1000px, calc(100% - 40px));
+    margin: 40px auto;
+    padding: 55px 70px;
+
+    background: #ffffff;
+
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.10);
+
+    border-top: 5px solid #174f91;
+}
+
+
+/* =========================
+   GŁÓWNY NAGŁÓWEK
+========================= */
+
+.section-header {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+
+    margin-bottom: 28px;
+    padding-bottom: 8px;
+
+    border-bottom: 1px solid #174f91;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 27px;
+    font-weight: 400;
+}
+
+.section-number {
+    color: #174f91;
+    font-weight: 700;
+}
+
+
+/* =========================
+   NAGŁÓWKI H2
+========================= */
+
+h2 {
+    margin: 28px 0 12px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+
+    color: #222;
+}
+
+h2 span {
+    color: #174f91;
+    font-weight: 700;
+}
+
+
+/* =========================
+   NAGŁÓWKI H3
+========================= */
+
+h3 {
+    margin: 28px 0 8px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+
+    color: #111;
+}
+
+
+/* =========================
+   TEKST
+========================= */
+
+p {
+    margin: 0 0 15px;
+
+    text-align: justify;
+}
+
+strong {
+    font-weight: 700;
+}
+
+em {
+    color: #174f91;
+}
+
+
+/* =========================
+   LISTY
+========================= */
+
+ul {
+    margin: 10px 0 18px;
+    padding-left: 27px;
+}
+
+li {
+    margin-bottom: 7px;
+    padding-left: 4px;
+}
+
+
+/* niebieskie punkty */
+
+li::marker {
+    color: #07549c;
+    font-size: 1.1em;
+}
+
+
+/* =========================
+   LISTA MVC
+========================= */
+
+.mvc-list {
+    margin-top: 5px;
+}
+
+.mvc-list strong {
+    color: #07549c;
+}
+
+
+/* =========================
+   PODSEKCJE
+========================= */
+
+.subsection {
+    margin-top: 8px;
+}
+
+
+/* =========================
+   RESPONSYWNOŚĆ
+========================= */
+
+@media (max-width: 800px) {
+
+    .document {
+        width: calc(100% - 24px);
+        margin: 12px auto;
+        padding: 35px 30px;
+    }
+
+    .section-header {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 21px;
+    }
+
+    h3 {
+        font-size: 19px;
+    }
+
+    body {
+        font-size: 15px;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .document {
+        width: 100%;
+        margin: 0;
+        padding: 25px 20px;
+
+        border-top: 4px solid #174f91;
+        box-shadow: none;
+    }
+
+    .section-header {
+        font-size: 21px;
+        gap: 6px;
+    }
+
+    h2 {
+        font-size: 19px;
+        line-height: 1.25;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    p {
+        text-align: left;
+    }
+
+    ul {
+        padding-left: 23px;
+    }
+}

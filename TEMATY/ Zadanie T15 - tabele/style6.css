@@ -1,0 +1,36 @@
+table {
+    width: 75%;
+    height: 100px;
+    padding: 10px;
+    margin: 15px auto 15px auto;
+    background-color: white;
+
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+
+    box-shadow: 5px 5px 50px grey;
+    -moz-box-shadow: 5px 5px 50px grey;
+    -webkit-box-shadow: 5px 5px 50px grey;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+h1 {
+    color: #642b19;
+    text-align: center;
+    font-size: 36px;
+    text-shadow: 2px 3px 3px grey;
+}
+
+th, td {
+    border: 1px solid #aaa;
+    padding: 3px;
+}
+
+th {
+    text-align: center;
+}

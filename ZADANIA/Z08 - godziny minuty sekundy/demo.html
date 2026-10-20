@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let sekundy = parseInt(prompt('Podaj ilość sekund:','0'))
+  let godziny = Math.floor(sekundy/3600)
+  let minuty = Math.floor((sekundy % 3600) /60)
+  let sek = Math.floor((sekundy % 3600) % 60)
+
+  document.write(godziny+'g'+minuty+'m'+sek+'s')
+</script>
+
+</body>
+</html>

@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Programowanie strukturalne</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- =========================
+     NAWIGACJA
+========================== -->
+
+<nav>
+    <div class="nav-container">
+
+        <div class="logo">
+            <span>&lt;/&gt;</span> Programowanie
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#strukturalne">Programowanie</a></li>
+            <li><a href="#zmienne">Zmienne</a></li>
+            <li><a href="#typy">Typy danych</a></li>
+            <li><a href="#operatory">Operatory</a></li>
+            <li><a href="#instrukcje">Instrukcje</a></li>
+            <li><a href="#cpp">C++</a></li>
+        </ul>
+
+    </div>
+</nav>
+
+
+<!-- =========================
+     HERO
+========================== -->
+
+<header class="hero">
+
+    <span class="badge">
+        1.1.2 • PODSTAWY PROGRAMOWANIA
+    </span>
+
+    <h1>
+        Programowanie
+        <span class="gradient-text">
+            strukturalne
+        </span>
+    </h1>
+
+    <p>
+        Najważniejsze informacje dotyczące programowania strukturalnego,
+        zmiennych, typów danych, operatorów oraz podstawowych instrukcji
+        sterujących w programowaniu.
+    </p>
+
+    <div class="hero-buttons">
+
+        <a href="#strukturalne" class="btn btn-primary">
+            Zacznij naukę →
+        </a>
+
+        <a href="#cpp" class="btn btn-secondary">
+            Zobacz przykład C++
+        </a>
+
+    </div>
+
+</header>
+
+
+<main>
+
+    <!-- =========================
+         PROGRAMOWANIE STRUKTURALNE
+    ========================== -->
+
+    <section id="strukturalne">
+
+        <div class="section-title">
+
+            <div class="section-number">
+                01
+            </div>
+
+            <h2>
+                Programowanie strukturalne
+            </h2>
+
+        </div>
+
+
+        <div class="card intro-card">
+
+            <p>
+                W programowaniu strukturalnym kod programu jest dzielony
+                na hierarchicznie ułożone bloki. Program tworzony jest
+                z wcześniej zdefiniowanych struktur, takich jak sekwencja
+                (ciąg kolejnych instrukcji), instrukcja warunkowa
+                (<code>if...else</code>), pętla (<code>while</code>,
+                <code>repeat</code>) oraz instrukcja wyboru.
+            </p>
+
+            <p>
+                Struktury te są stosowane do małych bloków programu
+                zawierających podstawowe instrukcje typu podstawienia,
+                wejścia-wyjścia lub wywołania procedur i funkcji.
+                Dzięki temu kod jest przejrzysty i łatwy w utrzymaniu.
+            </p>
+
+            <p>
+                Występujące w językach strukturalnych instrukcje skoku
+                (<code>goto</code>) lub przerwania
+                (<code>continue</code>, <code>switch</code>) są niezgodne
+                z zasadami strukturalności, ale pojawiają się w językach
+                programowania.
+            </p>
+
+            <p>
+                Prawie w każdym języku można programować strukturalnie.
+                Jednak niektóre z nich są do tego celu specjalnie
+                przeznaczone. Modelowym przykładem języka strukturalnego
+                był język Pascal.
+            </p>
+
+        </div>
+
+
+        <br>
+
+
+        <div class="highlight">
+
+            <div class="highlight-title">
+                💡 Podsumowanie
+            </div>
+
+            <p>
+                Programowanie strukturalne zachęca do dzielenia programu
+                na bloki (moduły, podprogramy), a powstałych bloków
+                na mniejsze jednostki w kolejności wykonywania.
+            </p>
+
+            <p>
+                Wykorzystuje instrukcje sterowania i pętle do kontrolowania
+                przebiegu programu. Kod staje się dzięki temu bardziej
+                przejrzysty i wzrasta jego wydajność.
+            </p>
+
+            <p>
+                Sposób programowania w tym paradygmacie może być różny
+                w zależności od zastosowanego systemu operacyjnego
+                i języka programowania. Jednak podstawowe zasady
+                programowania powinny zostać niezmienne.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         ZMIENNE
+    ========================== -->
+
+    <section id="zmienne">
+
+        <div class="section-title">
+
+            <div class="section-number">
+                02
+            </div>
+
+            <h2>
+                Zmienne
+            </h2>
+
+        </div>
+
+
+        <div class="card">
+
+            <p>
+                Jednym z podstawowych elementów języków programowania jest
+                <strong>zmienna</strong>. Jest ona abstrakcją komórki
+                pamięci komputera. Każdą zmienną można opisać za pomocą
+                nazwy, adresu, wartości, typu, okresu życia i zakresu
+                widoczności.
+            </p>
+
+        </div>
+
+
+        <br>
+
+
+        <div class="grid">
+
+            <div class="card definition">
+                <p>
+                    <em>Nazwa</em> — określa nazwę, przez którą następuje
+                    odwołanie do zmiennej. Dla nazwy powinny zostać
+                    zdefiniowane: zakres dozwolonych znaków, liczba
+                    dozwolonych znaków oraz rozróżnialność małych
+                    i dużych liter.
+                </p>
+            </div>
+
+            <div class="card definition">
+                <p>
+                    <em>Adres</em> — określa bieżący adres zmiennej
+                    w pamięci.
+                </p>
+            </div>
+
+            <div class="card definition">
+                <p>
+                    <em>Wartość</em> — określa wartość przypisaną
+                    do zmiennej.
+                </p>
+            </div>
+
+            <div class="card definition">
+                <p>
+                    <em>Typ</em> — określa zbiór dopuszczalnych wartości,
+                    jakie zmienna może przyjmować.
+                </p>
+            </div>
+
+            <div class="card definition">
+                <p>
+                    <em>Zakres widoczności</em> — określa blok instrukcji,
+                    w których zmienna jest widoczna i można się do niej
+                    odwołać.
+                </p>
+            </div>
+
+            <div class="card definition">
+                <p>
+                    <em>Okres życia</em> — określa czas, przez który
+                    zmienna istnieje. Przykładowo okres życia zmiennej
+                    zadeklarowanej w funkcji zaczyna się od wejścia
+                    do funkcji i kończy się w momencie zakończenia funkcji.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         TYPY DANYCH
+    ========================== -->
+
+    <section id="typy">
+
+        <div class="section-title">
+
+            <div class="section-number">
+                03
+            </div>
+
+            <h2>
+                Proste typy danych
+            </h2>
+
+        </div>
+
+
+        <div class="card">
+
+            <p>
+                Typ to zbiór wartości, które może przyjmować zmienna.
+                Większość języków programowania ma zestaw typów prostych.
+            </p>
+
+        </div>
+
+
+        <br>
+
+
+        <div class="grid-3">
+
+            <div class="type-card">
+
+                <div class="type-icon purple">
+                    123
+                </div>
+
+                <h3>
+                    Typ całkowity
+                </h3>
+
+                <p>
+                    <strong>int, integer</strong> odpowiada liczbom
+                    całkowitym. Mogą wystąpić jego warianty związane
+                    z rozmiarem liczby (<code>byte</code>,
+                    <code>short</code>, <code>long</code>) i jej znakiem
+                    (<code>signed</code>, <code>unsigned</code>).
+                </p>
+
+            </div>
+
+
+            <div class="type-card">
+
+                <div class="type-icon blue">
+                    3.14
+                </div>
+
+                <h3>
+                    Typ zmiennoprzecinkowy
+                </h3>
+
+                <p>
+                    Typy zmiennoprzecinkowe odpowiadają liczbom
+                    rzeczywistym: <code>float</code> oraz
+                    <code>double</code>.
+                </p>
+
+            </div>
+
+
+            <div class="type-card">
+
+                <div class="type-icon pink">
+                    A
+                </div>
+
+                <h3>
+                    Typ znakowy
+                </h3>
+
+                <p>
+                    Typy znakowe przechowują informacje o znakach
+                    zapisanych w kodzie ASCII lub Unicode:
+                    <code>char</code>, <code>character</code>.
+                </p>
+
+            </div>
+
+
+            <div class="type-card">
+
+                <div class="type-icon green">
+                    ✓
+                </div>
+
+                <h3>
+                    Typ logiczny
+                </h3>
+
+                <p>
+                    Przechowuje wartość logiczną
+                    <strong>Prawda</strong> lub
+                    <strong>Fałsz</strong>.
+                </p>
+
+            </div>
+
+
+            <div class="type-card">
+
+                <div class="type-icon orange">
+                    01
+                </div>
+
+                <h3>
+                    Typ stałoprzecinkowy
+                </h3>
+
+                <p>
+                    Typy stałoprzecinkowe mają ustaloną liczbę cyfr
+                    i miejsc po przecinku.
+                </p>
+
+            </div>
+
+
+            <div class="type-card">
+
+                <div class="type-icon purple">
+                    ≡
+                </div>
+
+                <h3>
+                    Typy złożone
+                </h3>
+
+                <p>
+                    Z typów prostych można tworzyć typy złożone,
+                    na przykład <strong>rekordy</strong>,
+                    <strong>tablice</strong> oraz
+                    <strong>typy wyliczeniowe</strong>.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         OPERATORY
+    ========================== -->
+
+    <section id="operatory">
+
+        <div class="section-title">
+
+            <div class="section-number">
+                04
+            </div>
+
+            <h2>
+                Operatory
+            </h2>
+
+        </div>
+
+
+        <div class="card">
+
+            <p>
+                Z każdym typem związana jest grupa operacji, które mogą
+                zostać wykonane na wartościach tego typu.
+            </p>
+
+        </div>
+
+
+        <br>
+
+
+        <div class="grid-3">
+
+            <div class="card operator">
+
+                <div class="operator-symbol">
+                    + − × ÷
+                </div>
+
+                <h3>
+                    Typ całkowity
+                </h3>
+
+                <p>
+                    Operacje dodawania (+), odejmowania (−),
+                    mnożenia (*) i dzielenia (/).
+                </p>
+
+            </div>
+
+
+            <div class="card operator">
+
+                <div class="operator-symbol">
+                    AND OR NOT
+                </div>
+
+                <h3>
+                    Typ logiczny
+                </h3>
+
+                <p>
+                    Operacje koniunkcji (<em>And</em>),
+                    alternatywy (<em>Or</em>) oraz negacji
+                    (<em>Not</em>).
+                </p>
+
+            </div>
+
+
+            <div class="card operator">
+
+                <div class="operator-symbol">
+                    "A" + "B"
+                </div>
+
+                <h3>
+                    Typ znakowy
+                </h3>
+
+                <p>
+                    Operacją charakterystyczną jest łączenie tekstów (+).
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         WEJŚCIE / WYJŚCIE
+    ========================== -->
+
+    <section>
+
+        <div class="section-title">
+
+            <div class="section-number">
+                05
+            </div>
+
+            <h2>
+                Operacje wejścia-wyjścia
+            </h2>
+
+        </div>
+
+
+        <div class="card">
+
+            <p>
+                Operacje wejścia-wyjścia pozwalają na pobieranie
+                i wypisywanie danych z konsoli.
+            </p>
+
+
+            <ul class="custom-list">
+
+                <li>
+                    <span class="check">✓</span>
+                    Pobieranie danych od użytkownika.
+                </li>
+
+                <li>
+                    <span class="check">✓</span>
+                    Wyświetlanie informacji na ekranie.
+                </li>
+
+                <li>
+                    <span class="check">✓</span>
+                    Komunikacja programu z użytkownikiem.
+                </li>
+
+            </ul>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         INSTRUKCJE
+    ========================== -->
+
+    <section id="instrukcje">
+
+        <div class="section-title">
+
+            <div class="section-number">
+                06
+            </div>
+
+            <h2>
+                Instrukcje
+            </h2>
+
+        </div>
+
+
+        <!-- SEKWENCJA -->
+
+        <div class="card">
+
+            <h3>
+                <span class="gradient-text">
+                    Sekwencja
+                </span>
+            </h3>
+
+            <p>
+                Sekwencja — ciąg kolejnych poleceń.
+            </p>
+
+
+            <div class="diagram-card">
+
+                <div class="diagram">
+
+                    <div class="box">
+                        Instrukcja 1
+                    </div>
+
+                    <div class="arrow">
+                        ↓
+                    </div>
+
+                    <div class="box">
+                        Instrukcja 2
+                    </div>
+
+                    <div class="arrow">
+                        ↓
+                    </div>
+
+                    <div class="box">
+                        Instrukcja 3
+                    </div>
+
+                </div>
+
+                <p>
+                    <strong>Rysunek 1.1.</strong> Sekwencja
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <br>
+
+
+        <!-- INSTRUKCJA WARUNKOWA -->
+
+        <div class="card">
+
+            <h3>
+                <span class="gradient-text">
+                    Instrukcja warunkowa
+                </span>
+            </h3>
+
+            <p>
+                Instrukcja warunkowa pozwala na rozgałęzienie przebiegu
+                działania programu.
+            </p>
+
+            <p>
+                Jeżeli wartość wyrażenia jest prawdą, zostanie wykonana
+                <strong>Instrukcja 2</strong>, w przeciwnym razie
+                <strong>Instrukcja 1</strong>.
+            </p>
+
+
+            <!-- NOWY DIAGRAM -->
+
+            <div class="diagram-card">
+
+                <div class="condition-diagram">
+
+                    <!-- Strzałka wejściowa -->
+                    <div class="condition-arrow-top">
+                        ↓
+                    </div>
+
+
+                    <!-- Romb -->
+                    <div class="decision">
+                        <span>Wyrażenie</span>
+                    </div>
+
+
+                    <!-- Linie wychodzące z rombu -->
+                    <div class="line-left"></div>
+                    <div class="line-right"></div>
+
+
+                    <!-- Napisy TAK / NIE -->
+                    <div class="label-no">
+                        Nie
+                    </div>
+
+                    <div class="label-yes">
+                        Tak
+                    </div>
+
+
+                    <!-- Instrukcja 1 -->
+                    <div class="condition-box box-left">
+                        Instrukcja 1
+                    </div>
+
+
+                    <!-- Instrukcja 2 -->
+                    <div class="condition-box box-right">
+                        Instrukcja 2
+                    </div>
+
+
+                    <!-- Linie łączące instrukcje -->
+                    <div class="bottom-line-left"></div>
+                    <div class="bottom-line-right"></div>
+
+
+                    <!-- Wspólna linia -->
+                    <div class="bottom-line"></div>
+
+
+                    <!-- Strzałka wyjściowa -->
+                    <div class="condition-arrow-bottom">
+                        ↓
+                    </div>
+
+                </div>
+
+
+                <p>
+                    <strong>Rysunek 1.2.</strong>
+                    Instrukcja warunkowa
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <br>
+
+
+        <!-- PĘTLA -->
+
+        <div class="card">
+
+            <h3>
+                <span class="gradient-text">
+                    Pętla
+                </span>
+            </h3>
+
+            <p>
+                Pętla pozwala na wykonywanie bloku programu kilkakrotnie
+                wtedy, dopóki wartość sprawdzanego wyrażenia jest prawdą.
+            </p>
+
+            <p>
+                Dopóki wartość wyrażenia jest prawdą, wykonywana jest
+                <strong>Instrukcja</strong>.
+            </p>
+
+
+            <div class="diagram-card">
+
+                <div class="loop-diagram">
+
+                    <div class="arrow">
+                        ↓
+                    </div>
+
+                    <div class="decision">
+                        <span>
+                            Wyrażenie
+                        </span>
+                    </div>
+
+                    <div class="loop-row">
+
+                        <div>
+
+                            <span class="branch-label">
+                                TAK
+                            </span>
+
+                            <div class="box">
+                                Instrukcja
+                            </div>
+
+                        </div>
+
+
+                        <div>
+
+                            <span class="branch-label">
+                                NIE
+                            </span>
+
+                            <div class="box">
+                                Koniec
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <p>
+                    <strong>Rysunek 1.3.</strong>
+                    Pętla
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         C++
+    ========================== -->
+
+    <section id="cpp">
+
+        <div class="section-title">
+
+            <div class="section-number">
+                07
+            </div>
+
+            <h2>
+                Przykład 1.1 — C++
+            </h2>
+
+        </div>
+
+
+        <div class="card">
+
+            <p>
+                <strong>
+                    Użycie instrukcji warunkowej w języku C++:
+                </strong>
+            </p>
+
+        </div>
+
+
+        <br>
+
+
+        <div class="code-window">
+
+            <div class="code-header">
+
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green-dot"></span>
+
+                <span class="file-name">
+                    main.cpp
+                </span>
+
+            </div>
+
+
+            <pre><code><span class="comment">#include &lt;iostream&gt;</span>
+
+<span class="keyword">using namespace</span> std;
+
+<span class="type">int</span> <span class="function">main</span>()
+{
+    <span class="type">int</span> liczba1 = 30, liczba2 = 16;
+
+    <span class="keyword">if</span> (liczba1 &gt; liczba2)
+        cout &lt;&lt; <span class="string">"Liczba: "</span>
+             &lt;&lt; liczba1
+             &lt;&lt; <span class="string">" jest wieksza od liczby "</span>
+             &lt;&lt; liczba2;
+
+    <span class="keyword">else</span>
+        cout &lt;&lt; <span class="string">"Liczba: "</span>
+             &lt;&lt; liczba2
+             &lt;&lt; <span class="string">" jest wieksza od liczby "</span>
+             &lt;&lt; liczba1;
+
+    <span class="keyword">return</span> 0;
+}</code></pre>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         PODSUMOWANIE
+    ========================== -->
+
+    <section>
+
+        <div class="section-title">
+
+            <div class="section-number">
+                08
+            </div>
+
+            <h2>
+                Najważniejsze informacje
+            </h2>
+
+        </div>
+
+
+        <div class="grid">
+
+            <div class="card">
+
+                <h3>
+                    🧩 Programowanie strukturalne
+                </h3>
+
+                <ul>
+                    <li>Dzieli program na logiczne bloki.</li>
+                    <li>Wykorzystuje sekwencje, warunki i pętle.</li>
+                    <li>Zwiększa czytelność kodu.</li>
+                    <li>Ułatwia utrzymanie programu.</li>
+                </ul>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>
+                    📦 Zmienne
+                </h3>
+
+                <ul>
+                    <li>Mają nazwę.</li>
+                    <li>Posiadają określony typ.</li>
+                    <li>Mają wartość.</li>
+                    <li>Zajmują określone miejsce w pamięci.</li>
+                </ul>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>
+                    🔢 Typy danych
+                </h3>
+
+                <ul>
+                    <li>Całkowite.</li>
+                    <li>Zmiennoprzecinkowe.</li>
+                    <li>Znakowe.</li>
+                    <li>Logiczne.</li>
+                    <li>Stałoprzecinkowe.</li>
+                    <li>Złożone.</li>
+                </ul>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>
+                    ⚙️ Instrukcje
+                </h3>
+
+                <ul>
+                    <li>Sekwencja.</li>
+                    <li>Instrukcja warunkowa.</li>
+                    <li>Pętla.</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- =========================
+     STOPKA
+========================== -->
+
+<footer>
+
+    <p>
+        <strong>Programowanie strukturalne</strong>
+        • Materiał edukacyjny
+    </p>
+
+    <p>
+        HTML + CSS • Nowoczesna wersja materiału
+    </p>
+
+    <p>
+        Dominik Meyer Klasa 4I
+    </p>
+</footer>
+
+</body>
+</html>

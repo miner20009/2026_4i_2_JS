@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.2. Proste algorytmy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- TYTUŁ -->
+    <h1>
+        <span class="number">1.2.</span> Proste algorytmy
+    </h1>
+
+
+    <!-- WYRÓŻNIONY TEKST -->
+    <div class="highlight">
+        Algorytm to zestaw ściśle określonych czynności prowadzących do wykonania pewnego
+        zadania. Określa sposób rozwiązania problemu i zastosowanie w różnych dziedzinach.
+        Języki programowania to narzędzia, które bardzo dobrze nadają się do zapisu
+        algorytmów. Aby napisać dobry program komputerowy, należy opracować skuteczny
+        algorytm i zdefiniować dla niego odpowiednie struktury danych.
+    </div>
+
+
+    <!-- TEKST -->
+    <p>
+        Algorytm przetwarzania danych powinien przy takim samym zbiorze danych wejściowych
+        zwracać zawsze taki sam wynik. Ale stanie się tak tylko w dokładnie takich samych
+        warunkach i przy tych samych danych pomocniczych. Zwykle przy projektowaniu
+        algorytmu zakłada się, że dane wejściowe są poprawne, ale bywają algorytmy, które
+        nie tylko przetwarzają dane, lecz również je weryfikują.
+    </p>
+
+    <p>
+        W rzeczywistości tak jak nie każdy problem można rozwiązać, tak nie każdą metodę
+        rozwiązania problemu można zapisać przy użyciu algorytmu. Aby problem mógł być
+        rozwiązany za pomocą komputera, musi zostać zapisany w postaci algorytmu. Wynika
+        to z tego, że komputer potrafi rozwiązywać tylko problemy, dla których rozwiązanie
+        zostanie zdefiniowane w postaci jednoznacznych kroków, czyli algorytmu. Jeżeli nie
+        można zdefiniować rozwiązania w postaci algorytmu, nie ma możliwości rozwiązania
+        go z wykorzystaniem komputera.
+    </p>
+
+    <p>
+        Zdefiniowany algorytm może zostać zapisany w wybranym języku programowania.
+        Ale ten sam algorytm może zostać zapisany różnie w zależności od użytego języka
+        programowania.
+    </p>
+
+    <p>
+        Zapis algorytmu w wybranym języku programowania nazywamy
+        <strong>implementacją algorytmu.</strong>
+    </p>
+
+
+    <!-- PODTYTUŁ -->
+    <h2>
+        <span class="number">1.2.1.</span> Reprezentacja algorytmów
+    </h2>
+
+    <p>
+        Algorytm opisujący operacje do wykonania może zostać zapisany w różny sposób.
+        Może to być zapis słowny, lista kroków do wykonania, pseudokod, drzewo algorytmu
+        lub schemat blokowy (tabela 1.1).
+    </p>
+
+
+    <!-- SCHEMAT BLOKOWY -->
+    <div class="blue-title">
+        Schemat blokowy
+    </div>
+
+    <p>
+        W schemacie blokowym operacje, które należy wykonać, są przedstawiane w postaci
+        graficznej z użyciem symboli.
+    </p>
+
+
+    <!-- NUMER STRONY -->
+    <div class="page-number">
+        15
+    </div>
+
+
+
+<!-- ============================== -->
+<!-- DRUGA STRONA - TABELA -->
+<!-- ============================== -->
+
+<div class="page page-table">
+
+    <div class="table-caption">
+        <strong>Tabela 1.1.</strong>
+        Symbole wykorzystywane do tworzenia schematów blokowych
+    </div>
+
+
+    <table>
+
+        <thead>
+        <tr>
+            <th class="symbol-column">Symbol</th>
+            <th>Opis</th>
+        </tr>
+        </thead>
+
+        <tbody>
+
+        <!-- START -->
+        <tr>
+            <td class="symbol">
+                <img src="images/image.1.png" alt="START">
+            </td>
+
+            <td>
+                Początek algorytmu, start programu.
+                Od tego miejsca rozpoczyna się wykonywanie operacji.
+            </td>
+        </tr>
+
+
+        <!-- STOP -->
+        <tr>
+            <td class="symbol">
+                <img src="images/image.2.png" alt="STOP">
+            </td>
+
+            <td>
+                Koniec algorytmu, zakończenie programu.
+                W tym miejscu następuje zakończenie wykonywania operacji.
+            </td>
+        </tr>
+
+
+        <!-- STRZAŁKA -->
+        <tr>
+            <td class="symbol">
+                <img src="images/image.3.png" alt="STOP">
+            </td>
+
+            <td>
+                Połączenie między blokami. Wskazuje kolejność wykonywania operacji.
+            </td>
+        </tr>
+
+
+        <!-- INSTRUKCJA -->
+        <tr>
+            <td class="symbol">
+                <img src="images/image.4.png" alt="Instrukcja">
+            </td>
+
+            <td>
+                Wykonanie operacji, blok obliczeniowy.
+                Wewnątrz tego symbolu znajdują się operacje do wykonania.
+            </td>
+        </tr>
+
+
+        <!-- WCZYTAJ -->
+        <tr>
+            <td class="symbol">
+                <img src="images/image.5.png" alt="Wczytaj">
+            </td>
+
+            <td>
+                Wprowadzanie danych. Wewnątrz tego symbolu określamy dane wejściowe,
+                które muszą zostać wczytane.
+            </td>
+        </tr>
+
+
+        <!-- WYŚWIETL -->
+        <tr>
+            <td class="symbol">
+                <img src="images/image.6.png" alt="Wyświetl">
+            </td>
+
+            <td>
+                Wyprowadzanie danych. Wewnątrz tego symbolu określamy dane wyjściowe,
+                które powinny zostać wyprowadzone jako wynik.
+            </td>
+        </tr>
+
+
+        <!-- WARUNEK -->
+        <tr>
+            <td class="symbol">
+                <img src="images/image.7.png" alt="Warunek">
+            </td>
+
+            <td>
+                Warunek logiczny, blok decyzyjny. Umożliwia tworzenie rozgałęzień
+                w algorytmie. Jeżeli warunek jest spełniony, to następuje przejście
+                do gałęzi oznaczonej „Tak”, w przeciwnym razie następuje przejście
+                do gałęzi oznaczonej „Nie”.
+            </td>
+        </tr>
+
+
+        <!-- PODPROGRAM -->
+        <tr>
+            <td class="symbol">
+                <img src="images/image.8.png" alt="Proces wstępnie zdefiniowany">
+            </td>
+
+            <td>
+                Proces wstępnie zdefiniowany. Symbol ten oznacza dołączenie podprogramu.
+            </td>
+        </tr>
+
+
+        <!-- ŁĄCZNIK -->
+        <tr>
+            <td class="symbol">
+                <img src="images/image.9.png" alt="Łącznik">
+            </td>
+
+            <td>
+                Łącznik. Odwołanie na stronie. Służy do oznaczenia miejsc łączenia
+                schematu na przyklad gdyby linie łączące na schemacie musiały się krzyżować.
+            </td>
+        </tr>
+
+
+        <!-- ŁĄCZNIK MIĘDZYSTRONICOWY -->
+        <tr>
+            <td class="symbol">
+                <img src="images/image.10.png"
+                     alt="Łącznik międzystronicowy">
+            </td>
+
+            <td>
+                Łącznik międzystronicowy. Służy do oznaczenia miejsc łączenia schematu,
+                gdy nie mieści się on na jednej stronie.
+            </td>
+        </tr>
+
+        </tbody>
+
+    </table>
+
+</div>
+<footer>
+    Autor: Dominik Meyer Klasa 4I
+</footer>
+</body>
+</html>

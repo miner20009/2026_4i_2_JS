@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zaprojektuj własne trampki</title>
+</head>
+<body>
+
+<form action="contest.php" method="post">
+
+    <fieldset>
+        <legend>Podstawowe dane</legend>
+
+        <ul>
+            <li>
+                <label for="form-name">Imię i nazwisko:</label>
+                <input type="text" name="username" id="form-name">
+            </li>
+
+            <li>
+                <label for="form-email">E-mail:</label>
+                <input type="email" name="email" id="form-email">
+            </li>
+
+            <li>
+                <label for="form-tel">Telephone:</label>
+                <input type="tel" name="telephone" id="form-tel">
+            </li>
+            <li>
+                <label for="form-story">Moje buty są TAKIE stare...</label>
+                <textarea name="story" id="form-story"
+                          rows="4" cols="60" maxlength="300"
+                          placeholder="Nie więcej niż 300 znaków"></textarea>
+            </li>
+        </ul>
+    </fieldset>
+
+    <h2>Zaprojektuj własne trampki:</h2>
+
+    <fieldset>
+        <legend>Własny projekt butów</legend>
+
+        <fieldset>
+            <legend>Kolor <em>(wybierz jeden)</em>:</legend>
+
+            <ul>
+                <li>
+                    <input type="radio" name="color" value="red" id="red">
+                    <label for="red">czerwony</label>
+                </li>
+
+                <li>
+                    <input type="radio" name="color" value="blue" id="blue">
+                    <label for="blue">niebieski</label>
+                </li>
+
+                <li>
+                    <input type="radio" name="color" value="black" id="black">
+                    <label for="black">czarny</label>
+                </li>
+
+                <li>
+                    <input type="radio" name="color" value="silver" id="silver">
+                    <label for="silver">srebrny</label>
+                </li>
+            </ul>
+        </fieldset>
+
+        <fieldset>
+            <legend>Opcje <em>(możesz wybrać kilka)</em></legend>
+
+            <ul>
+                <li>
+                    <input type="checkbox" name="features[]" value="laces" id="laces">
+                    <label for="laces">Błyszczące sznurówki</label>
+                </li>
+
+                <li>
+                    <input type="checkbox" name="features[]" value="logo" id="logo">
+                    <label for="logo">Metalowe logo</label>
+                </li>
+
+                <li>
+                    <input type="checkbox" name="features[]" value="heels" id="heels">
+                    <label for="heels">Świecące podeszwy</label>
+                </li>
+
+                <li>
+                    <input type="checkbox" name="features[]" value="mp3" id="mp3">
+                    <label for="mp3">Odtwarzanie MP3</label>
+                </li>
+            </ul>
+        </fieldset>
+
+        <fieldset>
+            <legend>Rozmiar</legend>
+
+            <p>
+                Rozmiar zgodny ze standardowymi numerami butów:
+                <select name="size" id="size">
+                    <option value="37" selected>37</option>
+                    <option value="38">38</option>
+                    <option value="39">39</option>
+                    <option value="40">40</option>
+                    <option value="41">41</option>
+                    <option value="42">42</option>
+                    <option value="43">43</option>
+                    <option value="44">44</option>
+                    <option value="45">45</option>
+                    <option value="46">46</option>
+                    <option value="47">47</option>
+                </select>
+            </p>
+        </fieldset>
+
+    </fieldset>
+
+    <button type="submit">Podrasuj swoje buty!</button>
+    <input type="reset" value="Zresetuj">
+
+</form>
+
+</body>
+</html>

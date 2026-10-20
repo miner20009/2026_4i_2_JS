@@ -1,0 +1,265 @@
+/* ==============================
+   RESET
+============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ==============================
+   CAŁA STRONA
+============================== */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #eef1f5;
+    color: #252525;
+    line-height: 1.6;
+    padding: 40px 20px;
+}
+
+
+/* ==============================
+   GŁÓWNY KONTENER / STRONY
+============================== */
+
+.page {
+    max-width: 1000px;
+    margin: 0 auto 40px;
+    padding: 50px 65px;
+
+    background: white;
+
+    border-radius: 14px;
+
+    box-shadow:
+            0 5px 15px rgba(0, 0, 0, 0.08);
+
+    border-top: 5px solid #2563eb;
+}
+
+
+/* ==============================
+   NAGŁÓWEK ROZDZIAŁU
+============================== */
+
+.chapter {
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    color: #64748b;
+
+    border-bottom: 1px solid #dbe1e8;
+}
+
+
+/* ==============================
+   GŁÓWNY NAGŁÓWEK
+============================== */
+
+h1 {
+    margin-bottom: 25px;
+
+    font-size: 32px;
+    line-height: 1.25;
+
+    color: #111827;
+}
+
+h1 span {
+    color: #2563eb;
+}
+
+
+/* ==============================
+   NAGŁÓWKI SEKCJI
+============================== */
+
+h2 {
+    margin-top: 40px;
+    margin-bottom: 15px;
+
+    padding-left: 14px;
+
+    font-size: 24px;
+
+    color: #1e293b;
+
+    border-left: 4px solid #2563eb;
+}
+
+
+/* ==============================
+   TEKST
+============================== */
+
+p {
+    margin-bottom: 16px;
+
+    font-size: 16px;
+
+    color: #475569;
+
+    text-align: justify;
+}
+
+strong {
+    color: #1e293b;
+}
+
+em {
+    color: #2563eb;
+}
+
+
+/* ==============================
+   LINKI
+============================== */
+
+a {
+    color: #2563eb;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+    transition: 0.2s;
+}
+
+a:hover {
+    color: #1d4ed8;
+    text-decoration: underline;
+}
+
+
+/* ==============================
+   LISTY
+============================== */
+
+ul {
+    margin: 15px 0 20px 0;
+
+    padding-left: 0;
+
+    list-style: none;
+}
+
+li {
+    margin-bottom: 10px;
+
+    padding: 10px 15px;
+
+    background: #f8fafc;
+
+    border-left: 3px solid #2563eb;
+
+    border-radius: 5px;
+
+    color: #475569;
+}
+
+
+/* ==============================
+   NUMER STRONY
+============================== */
+
+.page-number {
+    margin-top: 40px;
+    padding-top: 15px;
+
+    text-align: center;
+
+    color: #94a3b8;
+
+    font-size: 14px;
+
+    border-top: 1px solid #e2e8f0;
+}
+
+
+/* ==============================
+   EFEKT PO NAJECHANIU NA LISTĘ
+============================== */
+
+li {
+    transition: 0.2s;
+}
+
+li:hover {
+    background: #eff6ff;
+    transform: translateX(4px);
+}
+
+
+/* ==============================
+   RESPONSYWNOŚĆ
+============================== */
+
+@media (max-width: 800px) {
+
+    body {
+        padding: 20px 10px;
+    }
+
+    .page {
+        padding: 35px 30px;
+    }
+
+    h1 {
+        font-size: 27px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 15px;
+        text-align: left;
+    }
+}
+
+
+/* ==============================
+   TELEFONY
+============================== */
+
+@media (max-width: 500px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .page {
+        padding: 25px 20px;
+
+        border-radius: 10px;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+
+    h2 {
+        font-size: 20px;
+        margin-top: 30px;
+    }
+
+    .chapter {
+        font-size: 12px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    li {
+        font-size: 14px;
+    }
+}

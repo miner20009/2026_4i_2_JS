@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie Z28 - odległość 3D</title>
+</head>
+<body>
+<script>
+    let x1 = parseFloat(prompt('Podaj x1: ', ''))
+    let y1 = parseFloat(prompt('Podaj y1: ', ''))
+    let z1 = parseFloat(prompt('Podaj z1: ', ''))
+
+    let x2 = parseFloat(prompt('Podaj x2: ', ''))
+    let y2 = parseFloat(prompt('Podaj y2: ', ''))
+    let z2 = parseFloat(prompt('Podaj z2: ', ''))
+
+    let odleglosc = Math.sqrt(
+        (x1 - x2) ** 2 + (y1 - y2) ** 2 + (z1 - z2) ** 2
+    )
+    document.write('Punkt A: (' + x1 + ', ' + y1 + ', ' + z1 + ')<br>')
+    document.write('Punkt B: (' + x2 + ', ' + y2 + ', ' + z2 + ')<br>')
+    document.write('Odległość między punktami: ' + odleglosc.toFixed(2))
+</script>
+</body>
+</html>

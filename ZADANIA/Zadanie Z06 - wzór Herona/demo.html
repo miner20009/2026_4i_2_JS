@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo - wzór Herona</title>
+</head>
+<body>
+<script>
+    let a = parseFloat(prompt('Podaj bok a: ', ''))
+    let b = parseFloat(prompt('Podaj bok b: ', ''))
+    let c = parseFloat(prompt('Podaj bok c: ', ''))
+
+    let p = (a + b + c) / 2
+
+    let pole = Math.sqrt(p * (p - a) * (p - b) * (p - c))
+
+    document.write('Bok a = ' + a + '<br>')
+    document.write('Bok b = ' + b + '<br>')
+    document.write('Bok c = ' + c + '<br>')
+    document.write('Półobwód = ' + p + '<br>')
+    document.write('Pole trójkąta = ' + pole.toFixed(2))
+</script>
+</body>
+</html>

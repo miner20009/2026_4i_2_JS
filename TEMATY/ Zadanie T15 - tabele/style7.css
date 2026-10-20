@@ -1,0 +1,45 @@
+table {
+    width: 30%;
+    height: 100px;
+
+    font: 90%/1.5em "Lucida Grande", Geneva,
+    "DejaVu Sans", "Bitstream Vera Sans",
+    Arial, "Lucida Sans", "Trebuchet MS",
+    Arial, Verdana, sans-serif;
+
+    text-align: center;
+    border: 4px black double;
+    border-spacing: 0;
+
+    -moz-border-radius: 12px;
+    -moz-box-shadow: #6a3d37 5px 5px 6px;
+    -webkit-border-radius: 12px;
+    -webkit-box-shadow: #6a3d37 5px 5px 6px;
+
+    border-radius: 12px;
+    box-shadow: #6a3d37 5px 5px 6px;
+
+    background: #b59d5c;
+    margin: 15px auto;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+h1 {
+    color: #642b19;
+    text-align: center;
+    font-size: 36px;
+    text-shadow: 2px 3px 3px grey;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 3px;
+}
+
+th {
+    font-weight: bold;
+}
