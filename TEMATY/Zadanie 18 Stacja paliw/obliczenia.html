@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Stacja Paliw</title>
+    <link rel="stylesheet" href="styl3.css">
+</head>
+<body>
+<section id="baner-lewy">
+    <h1>Stacja Paliw</h1>
+</section>
+<section id="baner-prawy">
+    <a href="stacja.html"><img src="home.png" alt=""></a>
+    <a href="obliczenia.html"><img src="znak.png" alt=""></a>
+</section>
+<main>
+    <h3>Oblicz koszt paliwa</h3>
+    <label for="rodzaj">Rodzaj paliwa (1-benzyna, 2-olej napędowy)</label><br>
+    <input type="number" id="rodzaj"><br>
+    <label for="ile">Ile litrów:</label><br>
+    <input type="number" id="ile"><br>
+    <button>Oblicz</button>
+    <section class="wynik">
+
+    </section>
+    <script>
+        const pole_rodzaj = document.querySelector('#rodzaj')
+        const pole_ile = document.querySelector('#ile')
+        const wynik = document.querySelector('.wynik')
+        const btn = document.querySelector('button')
+
+        btn.addEventListener('click', function () {
+            let rodzaj = parseInt(pole_rodzaj.value)
+            let ile = parseInt(pole_ile.value)
+            let wartosc = 0
+
+            if (rodzaj===1) {
+                wartosc = ile * 4
+            }
+            if (rodzaj===2){
+                wartosc = ile * 3.5
+            }
+            wynik.innerHTML = `
+            koszt paliwa: ${wartosc}- zł
+            `
+        })
+    </script>
+</main>
+<section id="blok-lewy">
+    <a href="kwerendy.txt">Pobierz Kwerendy</a>
+</section>
+<section id="blok-prawy">
+    <img src="samochod.png" alt="samochód">
+</section>
+<footer>
+    <p>Stronę opracował: Dominik Meyer 4I/2</p>
+</footer>
+</body>
+</html>
