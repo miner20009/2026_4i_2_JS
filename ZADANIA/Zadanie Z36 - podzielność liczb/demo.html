@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = (prompt('Podaj a:',''))
+    let b = (prompt('Podaj b:',''))
+
+    if (isNaN(a) || isNaN(b)) {
+        document.writeln('Podana wartość lub wartości nie są liczbami')
+    } else if (parseInt(a) == a && parseInt(b) == b) {
+        if (a % b === 0) {
+            document.writeln(' liczba ' + a + ' jest podzielna przez ' + b + '<br>')
+        } else {
+            document.writeln(' liczba ' + a + ' nie podzielna przez ' + b + '<br>')
+        }
+    } else {
+        document.writeln('Podana liczba lub liczby są rzeczywiste')
+    }
+
+</script>
+</body>
+</html>

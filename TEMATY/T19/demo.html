@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let A = parseInt(prompt('Podaj A:',''))
+    let B = parseInt(prompt('Podaj B:',''))
+
+    let Y = ''
+
+    if (A<=0 && B<=0) {
+        document.writeln('I = 1')
+        Y = 0
+    } else if (A<=0 && B>=0) {
+        document.writeln('I = 2')
+        Y = 1
+    } else if (A>0 && B<=0) {
+        document.writeln('I = 3')
+        Y = 2
+    } else {
+        document.writeln('I = 4')
+        Y = 3
+    }
+    document.writeln('Y = ' + Y + '<br>')
+</script>
+</body>
+</html>
