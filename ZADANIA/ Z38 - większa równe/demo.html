@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = prompt('Podaj a:','')
+    let b = prompt('Podaj b:','')
+
+    if (isNaN(parseInt(a)) || isNaN(parseInt(b))) {
+        document.writeln('Podana wartość lub wartości nie jest liczbą'+'<br>')
+    } else if(parseInt(a) == a && parseInt(b) == b) {
+        a = parseInt(a)
+        b = parseInt(b)
+        if (a === b){
+            document.writeln( 'a == b'+'<br>')
+        } else if(a<b) {
+            document.writeln('a > b'+'<br>')
+        } else {
+            document.writeln('a < b')
+        }
+    } else {
+        document.writeln('Liczby nie są całkowite'+'<br>')
+    }
+</script>
+
+</body>
+</html>
