@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Z40-zupa</title>
+</head>
+<body>
+<script>
+    let zupa = prompt('Podaj nazwę zupy','')
+    let zupa_male = zupa.toLowerCase()
+    let wynik_text = ''
+
+    if (zupa_male == 'grochowa' || zupa_male == 'grzybowa') {
+        wynik_text = 'Zupa '+ zupa_male + ' - lubię tę zupe'
+    } else {
+        wynik_text = 'Zupa' + zupa + '- Nie lubię tej zupy'
+    }
+    document.writeln(wynik_text)
+</script>
+</body>
+</html>
