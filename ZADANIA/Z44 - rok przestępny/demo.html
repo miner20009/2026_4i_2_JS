@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Z44 - rok przestępny</title>
+</head>
+<body>
+<script>
+    let rok = parseInt(prompt('Podaj liczbe',''))
+
+    if (isNaN(rok)) {
+        document.writeln('Podana wartość nie jest liczbą')
+    } else if (rok % 400 == 0 || (rok % 4 == 0 && rok % 100 != 0)) {
+        document.writeln('Rok jest przestępny')
+    } else {
+        document.writeln('Rok nie jest przestępny')
+    }
+
+
+</script>
+</body>
+</html>

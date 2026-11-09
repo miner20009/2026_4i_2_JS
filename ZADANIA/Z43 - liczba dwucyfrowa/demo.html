@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Z43 - liczba dwucyfrowa</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt('Podaj a:',''))
+
+    if (isNaN(a)) {
+        document.writeln('Podana wartość nie jest liczbą')
+    } else if (a >= 10 && a < 100) {
+        document.writeln('Podana liczba jest dwucyfrowa')
+    } else {
+        document.writeln('Podana liczba nie jest dwucyfrowa')
+    } if (a % 2 !=0) {
+        document.writeln('Podana liczba nie jest parzysta')
+    }
+</script>
+</body>
+</html>
