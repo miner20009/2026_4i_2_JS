@@ -11,6 +11,8 @@ btn.addEventListener('click', function (){
     if (isNaN(parseInt(a)) || isNaN(parseInt(b))) {
         wynik_text = 'podana wartość lub wartości nie są liczbami'
     } else if (parseInt(a) == a && parseInt(b) == b) {
+        a = parseInt(a)
+        b = parseInt(b)
         if (a === b) {
             wynik_text = 'a == b'
         } else if (a>b) {

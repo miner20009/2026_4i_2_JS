@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Z45 - jaki trójkąt</title>
+</head>
+<body>
+<script>
+    let a = parseFloat(prompt("Podaj a:"))
+    let b = parseFloat(prompt("Podaj b:"))
+    let c = parseFloat(prompt("Podaj c:"))
+
+    document.writeln('a = ' + '<br>')
+    document.writeln('b = ' + '<br>')
+    document.writeln('c = ' + '<br>')
+
+    let wynik_tekst = ''
+
+    if (a + b <= c ) {
+        wynik_tekst = 'Nie można zbudować takiego trójkąta'
+    } else if (a === b && b === c) {
+        wynik_tekst = 'Trójkąt jest równoboczny'
+    } else if (a === b || a ===c || c ===b) {
+        wynik_tekst = 'Trójkąt jest równoramienny'
+    } else if ( a**2 + b**2 === c**2) {
+        wynik_tekst = 'Trójkąt jest prostokątny'
+    } else {
+        wynik_tekst = 'Trójkąt dowolny'
+    }
+    document.writeln(wynik_tekst)
+</script>
+</body>
+</html>
