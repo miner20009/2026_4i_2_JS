@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /*
+    n = 4
+
+    1000
+    0100
+    0010
+    0001
+     */
+
+    let n = parseInt(prompt('podaj n:',''))
+
+    for (let w  = 1; w<=n; w++){
+        for (let i = 1; i<= n; i++){
+            if (w ===1){
+                document.writeln('1')
+            } else {
+                document.writeln('0')
+            }
+        }
+        document.writeln('<br>')
+    }
+</script>
+</body>
+</html>
